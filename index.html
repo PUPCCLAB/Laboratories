@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website for the Laboratories of Polytechnic University of the Philippines - Cabiao Campus. Explore our state-of-the-art facilities and equipment inventory.">
+  <title>Laboratories - PUP Cabiao Campus</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Assets/PUP%20LOGO.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+
+  <!-- Header Section -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo-link" id="logo-nav">
+        <img src="Assets/PUP%20LOGO.png" alt="PUP Official Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-title">PUP CABIAO</span>
+          <span class="logo-sub">Campus Laboratories</span>
+        </div>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active" id="nav-home-link">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-about-link">About Us</a></li>
+          <li><a href="#facilities" class="nav-link" id="nav-facilities-link">Laboratory Facilities</a></li>
+          <li><a href="#inventory" class="nav-link" id="nav-inventory-link">Equipment Inventory</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls-wrapper">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+          <!-- Moon Icon (Dark Mode Trigger) -->
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+          </svg>
+          <!-- Sun Icon (Light Mode Trigger) -->
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM5.22 5.22a1 1 0 0 1 1.42 0l1.41 1.41a1 1 0 0 1-1.41 1.42L5.22 6.64a1 1 0 0 1 0-1.42zm10.6 10.6a1 1 0 0 1 1.42 0l1.41 1.41a1 1 0 0 1-1.41 1.42l-1.41-1.42a1 1 0 0 1 0-1.41zm-12.8 0a1 1 0 0 1 0 1.42l-1.42 1.41a1 1 0 0 1-1.41-1.42l1.41-1.41a1 1 0 0 1 1.42 0zm10.6-10.6a1 1 0 0 1 0-1.42l1.42-1.41a1 1 0 0 1 1.41 1.42l-1.41 1.41a1 1 0 0 1-1.42 0zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H2a1 1 0 0 1-1-1zm15 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1z"/>
+          </svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-slider" id="hero-slider">
+      <!-- Carousel Slides -->
+      <div class="hero-slide active" style="background-image: url('Assets/Computer%20Laboratory%20Angle%201.jpeg');" aria-label="Computer Laboratory view 1"></div>
+      <div class="hero-slide" style="background-image: url('Assets/Computer%20Laboratory%20Angle%202.jpeg');" aria-label="Computer Laboratory view 2"></div>
+      <div class="hero-slide" style="background-image: url('Assets/Computer%20Laboratory%20Angle%203.jpeg');" aria-label="Computer Laboratory view 3"></div>
+      <div class="hero-slide" style="background-image: url('Assets/Computer%20Laboratory%20Angle%204.jpeg');" aria-label="Computer Laboratory view 4"></div>
+    </div>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <p class="hero-tagline">Polytechnic University of the Philippines</p>
+      <h1 class="hero-title">
+        Laboratories
+        <span>PUP Cabiao Campus</span>
+      </h1>
+      <p class="hero-desc">Elevating empirical research and technical skills through state-of-the-art computer networks, design systems, and highly equipped modern laboratory facilities.</p>
+      <div class="hero-btns">
+        <a href="#facilities" class="btn btn-primary" id="hero-btn-facilities">Explore Facilities</a>
+        <a href="#inventory" class="btn btn-secondary" id="hero-btn-inventory">View Equipment</a>
+      </div>
+    </div>
+
+    <!-- Slide controls -->
+    <button class="slider-arrow slider-arrow-prev" id="slider-prev" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+    </button>
+    <button class="slider-arrow slider-arrow-next" id="slider-next" aria-label="Next slide">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+    </button>
+
+    <!-- Slide Indicators -->
+    <div class="slider-dots" id="slider-dots">
+      <button class="slider-dot active" data-index="0" aria-label="Slide 1 indicator"></button>
+      <button class="slider-dot" data-index="1" aria-label="Slide 2 indicator"></button>
+      <button class="slider-dot" data-index="2" aria-label="Slide 3 indicator"></button>
+      <button class="slider-dot" data-index="3" aria-label="Slide 4 indicator"></button>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="reveal">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Fostering <span>Innovation</span> &amp; Learning</h2>
+        <p class="section-subtitle">Bridging theory and industry standards with academic laboratory guidance.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-img-wrapper">
+          <img src="Assets/Computer%20Laboratory%20Angle%202.jpeg" alt="Students workstations at PUPCC Computer Laboratory" class="about-img">
+          <div class="about-badge">
+            <span class="badge-number">21+</span>
+            <span class="badge-text">Workstations</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h3 class="about-welcome">Welcome to <span>PUPCC Laboratories</span></h3>
+          <p class="about-lead">The Computer Laboratories of the Polytechnic University of the Philippines – Cabiao Campus serve as essential learning environments for technology-based instruction, digital innovation, and academic research. Equipped with modern computing resources and software applications, these laboratories provide students with opportunities to develop technical competencies, enhance analytical thinking, and engage in practical learning experiences.</p>
+          <p>Through accessible technology, reliable computer facilities, and dedicated faculty guidance, the Computer Laboratories support the university’s commitment to producing competent, innovative, and socially responsible graduates who are prepared to meet the demands of the digital age.</p>
+          
+          <!-- Mission and Vision Tabs -->
+          <div class="about-mv-tabs">
+            <button class="about-tab-btn active" data-tab="mission" id="tab-mission">Mission</button>
+            <button class="about-tab-btn" data-tab="vision" id="tab-vision">Vision</button>
+            <button class="about-tab-btn" data-tab="role" id="tab-role">Role in Research</button>
+          </div>
+
+          <div class="about-tab-content active" id="content-mission">
+            <p>To provide a conducive and technology-driven learning environment that supports quality instruction, practical skill development, research activities, and innovation in the field of computing and information technology.</p>
+            <ul>
+              <li>Deliver clean, modern, and high-performance system stations.</li>
+              <li>Provide software tools matching international standards.</li>
+              <li>Maintain healthy, secure, and accessible learning environments.</li>
+            </ul>
+          </div>
+
+          <div class="about-tab-content" id="content-vision">
+            <p>To become a center of excellence in computing education and technological advancement by fostering digital competence, creativity, and lifelong learning among students and researchers.</p>
+            <ul>
+              <li>Pioneer regional research in computing and networks.</li>
+              <li>Sustain a modern repository of academic hardware assets.</li>
+              <li>Cultivate self-reliant developers and network technicians.</li>
+            </ul>
+          </div>
+
+          <div class="about-tab-content" id="content-role">
+            <p>The Computer Laboratories play a significant role in supporting academic and research activities by providing access to computing resources, software tools, internet connectivity, and technical facilities necessary for data analysis, system development, simulations, and other research-related tasks. These laboratories encourage innovation, collaboration, and the application of technology in addressing academic, institutional, and community challenges.</p>
+            <ul>
+              <li>Facilitate capstone projects and research development.</li>
+              <li>Provide reliable hardware configurations for computational tests.</li>
+              <li>Encourage scientific investigation and knowledge creation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Laboratory Facilities Section -->
+  <section id="facilities" class="reveal">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-tag">Facilities</span>
+        <h2 class="section-title">Our <span>Laboratory</span> Facilities</h2>
+        <p class="section-subtitle">Examine the specialized computing configurations and testing setups on our campus.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="facilities-grid">
+        <!-- Card 1: Computer Laboratory -->
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <span class="facility-tag">Main Facility</span>
+            <img src="Assets/Computer%20Laboratory%20Angle%203.jpeg" alt="PUP Cabiao Campus Computer Laboratory" class="facility-img">
+          </div>
+          <div class="facility-info">
+            <h3 class="facility-title">Computer Laboratory</h3>
+            <p class="facility-desc">The primary computational facility designed for database administration, web programming, information security modules, and basic application design testing. Fully climate-controlled and networking-enabled.</p>
+            <div class="facility-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.11-.9-2-2-2H4c-1.11 0-2 .89-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+                <span>Desktop PC Stations</span>
+                <span class="spec-val">21 Units</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+                <span>Climate Systems</span>
+                <span class="spec-val">AC &amp; Fans</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <span>Power Protection</span>
+                <span class="spec-val">16 AVRs</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+                <span>Presentation</span>
+                <span class="spec-val">Projector Screen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Networking & Seminar Lab Configuration -->
+        <div class="facility-card">
+          <div class="facility-img-wrapper">
+            <span class="facility-tag">Specialized Setup</span>
+            <img src="Assets/Computer%20Laboratory%20Angle%204.jpeg" alt="Hardware and Networking workshop layout" class="facility-img">
+          </div>
+          <div class="facility-info">
+            <h3 class="facility-title">Hardware &amp; Network Setup</h3>
+            <p class="facility-desc">An interactive workspace configured within the computer laboratory to allow student teams to design Local Area Network topologies, configure routers, construct ethernet cabling, and run software debugging tools.</p>
+            <div class="facility-specs">
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M21.9 21.9l-8.5-8.5c-.2-.2-.5-.4-.8-.5.3-.6.4-1.3.4-2 0-2.5-2-4.5-4.5-4.5S4 8.4 4 10.9s2 4.5 4.5 4.5c.7 0 1.4-.1 2-.4.1.3.3.6.5.8l8.5 8.5c.4.4 1.1.4 1.5 0l.9-.9c.4-.4.4-1.1 0-1.5zM6 10.9c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5S6 12.3 6 10.9z"/></svg>
+                <span>Diagnostic Webcams</span>
+                <span class="spec-val">7 Units</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z"/></svg>
+                <span>Network Protocol</span>
+                <span class="spec-val">IPv4 / IPv6</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+                <span>Online Storage</span>
+                <span class="spec-val">Active Cloud</span>
+              </div>
+              <div class="spec-item">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                <span>Input Devices</span>
+                <span class="spec-val">22 Mice</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipment Inventory Section -->
+  <section id="inventory" class="reveal">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-tag">Inventory</span>
+        <h2 class="section-title">Equipment <span>Inventory</span></h2>
+        <p class="section-subtitle">A live tracker of active hardware components and peripherals in the Computer Laboratory.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Statistics Banner -->
+      <div class="stats-banner">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.11-.9-2-2-2H4c-1.11 0-2 .89-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+          </div>
+          <div class="stat-details">
+            <span class="stat-count" id="stat-total-pcs">21</span>
+            <span class="stat-label">System Units</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
+          </div>
+          <div class="stat-details">
+            <span class="stat-count" id="stat-total-monitors">21</span>
+            <span class="stat-label">Monitors</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <div class="stat-details">
+            <span class="stat-count" id="stat-total-avr">16</span>
+            <span class="stat-label">AVRs</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+          </div>
+          <div class="stat-details">
+            <span class="stat-count" id="stat-total-peripherals">30</span>
+            <span class="stat-label">Peripherals</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls Row: Search and Tabs -->
+      <div class="inventory-controls">
+        <div class="inventory-search-row">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <input type="text" id="inventory-search" class="search-input" placeholder="Search equipment by name or category (e.g. Monitor, Aircon)...">
+          </div>
+        </div>
+        <div class="filter-btn-group">
+          <button class="filter-btn active" data-category="all">All Items</button>
+          <button class="filter-btn" data-category="computing">Core Computing</button>
+          <button class="filter-btn" data-category="peripherals">Peripherals</button>
+          <button class="filter-btn" data-category="power">Power Supply</button>
+          <button class="filter-btn" data-category="climate">Climate &amp; Fixtures</button>
+        </div>
+      </div>
+
+      <!-- Grid Cards -->
+      <div class="inventory-grid" id="inventory-grid">
+        <!-- Item 1: System Units -->
+        <div class="inventory-card" data-category="computing" data-keywords="system unit computer desktop pc cpu tower">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">21 Qty</span>
+            <span class="inv-category-tag">Computing</span>
+            <img src="Assets/Computer%20Laboratory%20Angle%201.jpeg" alt="System Units" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">System Units</h3>
+            <p class="inv-desc">Tower chassis desktop CPUs equipped with standard multi-core processors, RAM, and essential IDE development environments for students.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Primary Lab Room</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Monitors -->
+        <div class="inventory-card" data-category="computing" data-keywords="monitor screen display led lcd">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">21 Qty</span>
+            <span class="inv-category-tag">Computing</span>
+            <img src="Assets/Monitor.jpeg" alt="Display Monitors" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">Display Monitors</h3>
+            <p class="inv-desc">Widescreen LED display monitors providing crisp visuals, reducing eye strain for students programming during long laboratory sessions.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Primary Lab Room</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: AVR -->
+        <div class="inventory-card" data-category="power" data-keywords="avr automatic voltage regulator battery ups power">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">16 Qty</span>
+            <span class="inv-category-tag">Power</span>
+            <img src="Assets/Computer%20Laboratory%20Angle%202.jpeg" alt="AVR" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">Automatic Voltage Regulators</h3>
+            <p class="inv-desc">AVR units supporting critical workstations, shielding sensitive micro-controllers and internal storage from voltage surges or sudden dropouts.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Under Workstations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Mouse -->
+        <div class="inventory-card" data-category="peripherals" data-keywords="mouse mousepad usb wired mouse optical mouse">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">22 Qty</span>
+            <span class="inv-category-tag">Peripherals</span>
+            <img src="Assets/Mouse.jpeg" alt="Optical Mouse" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">Wired Optical Mouse</h3>
+            <p class="inv-desc">High-precision wired USB optical mice distributed across all workstations to ensure fluid computer laboratory user navigation.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Workstations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Webcams -->
+        <div class="inventory-card" data-category="peripherals" data-keywords="webcam camera video stream mic webcam online">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">7 Qty</span>
+            <span class="inv-category-tag">Peripherals</span>
+            <img src="Assets/Webcam.jpeg" alt="USB Webcams" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">HD Webcams</h3>
+            <p class="inv-desc">USB-connected high-definition cameras enabling video streaming, facial recognition training models, and hybrid consultation setups.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Instructor &amp; Team PCs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Electric Fans -->
+        <div class="inventory-card" data-category="climate" data-keywords="electric fan stand fan cooling air circulator">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">5 Qty</span>
+            <span class="inv-category-tag">Climate</span>
+            <img src="Assets/Electric%20Fan.jpeg" alt="Electric Fan" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">Industrial Electric Fans</h3>
+            <p class="inv-desc">Wall-mounted and stand cooling fans positioned around the room to boost air circulation and maintain ideal equipment cooling.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Wall Mounted</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Air Conditioners -->
+        <div class="inventory-card" data-category="climate" data-keywords="air conditioner ac aircon split type cooling">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">2 Qty</span>
+            <span class="inv-category-tag">Climate</span>
+            <img src="Assets/Aircon%202.jpeg" alt="Air Conditioning Units" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">Air Conditioning Units</h3>
+            <p class="inv-desc">Heavy-duty wall cooling air conditioning split units keeping temperature and humidity thresholds nominal for servers and PCs.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Lab Room Ends</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Projector Screen -->
+        <div class="inventory-card" data-category="climate" data-keywords="projector screen beamer whiteboard slide display">
+          <div class="inv-img-wrapper">
+            <span class="inv-badge">1 Qty</span>
+            <span class="inv-category-tag">Climate</span>
+            <img src="Assets/Projector%20Screen.jpeg" alt="Projector Screen" class="inv-img">
+          </div>
+          <div class="inv-info">
+            <h3 class="inv-title">Projector Wall Screen</h3>
+            <p class="inv-desc">Retractable white display screen positioned at the front wall of the laboratory to project computer codes and lecture slides.</p>
+            <div class="inv-footer">
+              <span class="inv-status"><span class="status-dot"></span>Active</span>
+              <span>Front Wall Center</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fallback No Results -->
+        <div class="no-results" id="no-results-message">
+          <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <h3>No Equipment Found</h3>
+          <p>We couldn't find any items matching your search query. Try adjusting your keywords.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="reveal">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get in <span>Touch</span></h2>
+        <p class="section-subtitle">Reach out to campus administration or submit a laboratory inquiry.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Panel -->
+        <div class="contact-info-panel">
+          <div class="contact-card">
+            <!-- Office Location -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="contact-item-details">
+                <span class="contact-item-label">Office Location</span>
+                <span class="contact-item-val">Main Building, 2nd Floor, CB11<br>PUP Cabiao Campus, San Roque, Cabiao, Nueva Ecija</span>
+              </div>
+            </div>
+
+            <!-- Email Addresses -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div class="contact-item-details">
+                <span class="contact-item-label">Email Support</span>
+                <span class="contact-item-val">
+                  <a href="mailto:cabiao.info@pup.edu.ph">cabiao.info@pup.edu.ph</a><br>
+                  <a href="mailto:cabiao.labs@pup.edu.ph">cabiao.labs@pup.edu.ph</a>
+                </span>
+              </div>
+            </div>
+
+            <!-- Phone Numbers -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div class="contact-item-details">
+                <span class="contact-item-label">Phone &amp; Hotline</span>
+                <span class="contact-item-val">(+63 44) 486-5492</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Map Card -->
+          <div class="map-card">
+            <div class="map-placeholder">
+              <svg viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
+              <h4 class="map-placeholder-title">PUP Cabiao Campus</h4>
+              <p class="map-placeholder-desc">San Roque, Cabiao, Nueva Ecija, Central Luzon, Philippines. Located along Jose Abad Santos Avenue.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Send a Message</h3>
+          <p class="form-subtitle">For equipment requests, student reservation inquiries, or reporting faults.</p>
+          
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Enter your full name" required>
+              <div class="form-error-msg" id="name-error">Please enter your name (minimum 3 characters).</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="Enter your email address" required>
+              <div class="form-error-msg" id="email-error">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="What is your inquiry about?" required>
+              <div class="form-error-msg" id="subject-error">Please enter a subject (minimum 4 characters).</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Type your message here..." required></textarea>
+              <div class="form-error-msg" id="message-error">Please enter a message (minimum 10 characters).</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn" id="contact-submit-btn">
+              <span>Send Message</span>
+              <svg class="send-icon" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="footer-logo-link">
+          <img src="Assets/PUP%20LOGO.png" alt="PUP Official Logo" class="footer-logo-img">
+          <h3 class="footer-logo-title">PUP <span>CABIAO</span></h3>
+        </a>
+        <p class="footer-desc">Polytechnic University of the Philippines – Cabiao Campus (PUPCC) delivers quality polytechnic education, driving technological training and computer-based research in Nueva Ecija.</p>
+        
+        <div class="footer-socials">
+          <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Visit our Facebook page">
+            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon" target="_blank" aria-label="Visit our Twitter page">
+            <svg viewBox="0 0 24 24"><path d="M24 4.56v-.2a9.66 9.66 0 0 1-2.78.77 4.88 4.88 0 0 0 2.13-2.68 9.77 9.77 0 0 1-3.09 1.18 4.87 4.87 0 0 0-8.3 4.43 13.8 13.8 0 0 1-10-5.08 4.87 4.87 0 0 0 1.5 6.5 4.8 4.8 0 0 1-2.2-.6v.06a4.87 4.87 0 0 0 3.9 4.78 4.87 4.87 0 0 1-2.2.08 4.88 4.88 0 0 0 4.56 3.38A9.77 9.77 0 0 1 0 19.54a13.77 13.77 0 0 0 7.46 2.19c9 0 13.9-7.46 13.9-13.9 0-.21 0-.43-.02-.64A9.9 9.9 0 0 0 24 4.56z"/></svg>
+          </a>
+          <a href="https://youtube.com" class="social-icon" target="_blank" aria-label="Visit our YouTube channel">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.5 12 3.5 12 3.5s-7.518 0-9.388.553a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.553 9.388.553 9.388.553s7.518 0 9.388-.553a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="Visit our LinkedIn page">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#inventory">Inventory</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#inventory">PC Allocations</a></li>
+          <li><a href="#contact">Lab Reservation</a></li>
+          <li><a href="#about">Research Guidelines</a></li>
+          <li><a href="#facilities">Network Lab Hours</a></li>
+          <li><a href="https://www.pup.edu.ph" target="_blank">PUP Main Portal</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Official Address</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>PUP Cabiao Campus<br>Jose Abad Santos Avenue,<br>San Roque, Cabiao, Nueva Ecija, Philippines</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>(+63 44) 486-5492</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>cabiao.info@pup.edu.ph</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-copy">&copy; 2026 Polytechnic University of the Philippines – Cabiao Campus. All rights reserved.</p>
+      <p class="footer-dev">Made with <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> for PUPCC Students.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+  </button>
+
+  <!-- Custom Toast Notification -->
+  <div class="toast-container" id="toast-container" role="alert" aria-live="polite">
+    <div class="toast" id="submit-toast">
+      <svg class="toast-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      <div class="toast-content">
+        <span class="toast-title">Message Sent!</span>
+        <span class="toast-message">Your inquiry has been successfully dispatched.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
